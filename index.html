@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new form</title>
+    <link rel="stylesheet" href="/css/newform.css">
+</head>
+<body>
+    <section class="main-container">
+        <div class="form-container">
+            <div class="error_box">
+                <div class="close_btn"></div>
+                <p id="error_msg"></p>
+            </div>
+            <div class="form">
+                <div class="front_form">
+                    <fieldset>
+                        <legend> name :</legend>
+                        <input type="text" name="" id="name">
+                    </fieldset>
+                    <fieldset>
+                        <legend>rollno :</legend>
+                        <input type="text" name="" id="rollno">
+                    </fieldset>
+                    <fieldset>
+                        <legend>department :</legend>
+                        <select name="" id="dept">
+                            <option value="">select dept</option>
+                            <option value="it">IT</option>
+                            <option value="cse">CSE</option>
+                            <option value="ai/ds">AI/DS</option>
+                            <option value="cce">CCE</option>
+                            <option value="csbs">CSBS</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>year :</legend>
+                        <select name="" id="year">
+                            <option value="">select year</option>
+                            <option value="I">II</option>
+                            <option value="III">III</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>IEEE member :</legend>
+                        <select name="ieee" id="member">
+                            <option value="">select option</option>
+                            <option value="yes">YES</option>
+                            <option value="no">NO</option>
+                        </select>
+                    </fieldset>
+                    <fieldset id="upload">
+                        <legend>member id :</legend>
+                       <input type="file" name="upload" id="uploaded">
+                    </fieldset>
+                    
+                </div>
+                <div class="back_form">
+                    <fieldset class="tech_field">
+                        <legend>tech events :</legend>
+                        <input type="checkbox" name="" id=""> <span id="events">event1event</span>
+                        <input type="checkbox" name="" id=""> <span id="events">event2event</span>                        
+                        <input type="checkbox" name="" id=""> <span id="events">event3event</span>
+                        <input type="checkbox" name="" id=""> <span id="events">event4event</span>
+                        <input type="checkbox" name="" id="techteamcheck" class="team_events"><span id="events">event5 [team]</span>
+                    </fieldset>
+                    <fieldset class="nontech_field">
+                        <legend>non tech events :</legend>
+                        <input type="checkbox" name="" id=""><span id="events">event1</span>
+                        <input type="checkbox" name="" id=""><span id="events">event2</span>
+                        <input type="checkbox" name="" id=""><span id="events">event3</span>
+                        <input type="checkbox" name="" id="teamcheck" class="team_events"><span id="events">event4 [team]</span>
+                    </fieldset>
+                    <fieldset>
+                        <legend>team name:</legend>
+                        <input type="text" name="" id="teamname" placeholder="Only requiered if you participate in team event">
+                    </fieldset>
+                    <fieldset>
+                        <legend>team members name:</legend>
+                        <textarea name="" id="teammember" cols="80" rows="3" placeholder="Only requiered if you participate in team event"></textarea>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <div class="left_half"></div>
+        <div class="right_half"></div>
+        <div class="buttons">
+            <button class="next">next</button>
+            <button class="prev">prev</button>
+            <button class="submit">submit</button>
+        </div>
+    </section>
+    <script src="/js/newform.js"></script>
+</body>
+</html>
